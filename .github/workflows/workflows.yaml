@@ -13,6 +13,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: check server-info
-        run: systeminfo
+        run: ver
+        shell: cmd
       - name: display wording
         run: echo hello ${{ github.actor }}   
