@@ -11,7 +11,7 @@ jobs:
         run: echo hello ${{ github.actor }}
 jobs:
   check-windows-version:
-    runs-on: windows-latest
+    runs-on: windows
     steps:
       - name: check server-info
         run: ver
